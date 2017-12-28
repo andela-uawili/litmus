@@ -1,0 +1,75 @@
+
+.header, .footer {
+	position: fixed;
+	width: 100%;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+	display: flex;
+	align-items: center;
+}
+
+.header {
+	top: 0;
+	pa
+}
+
+.footer {
+	bottom: 0;
+}
+
+
+.header .logo {
+	width: 100px;
+	height: 100px;
+	background-image: linear-gradient(to right, #415AC4 0%, #6E00D0 100%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 0;
+}
+
+.header .logo img {
+	width: auto;
+	height: 50px;
+}
+
+.header .details {
+	margin-left: 40px;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+.header .details .title {
+	color: #000;
+	font-size: 1.7rem;
+	font-weight: 400;
+	padding-bottom: 5px;
+}
+
+.header .details .description {
+	font-size: 0.86rem;
+	font-weight: 400;
+}
+
+.header .timer {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	flex-grow: 0;
+	padding: 0 50px;
+}
+
+.header .timer .time-allowed {
+	font-size: 0.86rem;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.header .timer .time-used {
+	font-size: 1.7rem;
+	font-weight: 400;
+	color: #6710CE;
+	margin-top: 5px;
+}
+
+
+
