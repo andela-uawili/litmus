@@ -1,37 +1,81 @@
-html, body, .content  {
-	width: 100%;
-	height: 100%;
-}
-
 body {
 	font-family: 'Montserrat', san-serif;
 	font-size: 14px;
 }
-
 a {
 	text-decoration: none;
 }
-
-
 .btn {
-	padding: 18px 50px;
 	text-transform: uppercase;
 	font-weight: 700;
 	letter-spacing: 2px;
-	border-radius: 5px;
 	line-height: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding: 0 50px;
+    border-radius: 5px;
+    overflow: hidden;
+	transition: all .3s;
 }
-
 .btn-primary {
-	background-image: linear-gradient(to right, #415AC4 0%, #6E00D0 100%);
     color: white;
+    border: none;
+	background-image: linear-gradient(to right, #415AC4 0%, #6E00D0 100%);
     box-shadow: 0 25px 60px 0px rgba(0,0,0,0.15);
 }
-
+.btn-primary:hover {
+	background-color: #6710CE;
+}
 .btn-secondary {
-	background-color: #FFF;
     color: #6710CE;
-    border: 1px solid #6710CE;
+    border: 1px solid #EEE;
+	background-color: #FFF;
+}
+.btn-secondary:hover {
+	border-color: #6710CE;
+}
+
+.btn::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform: translateX(-100%);
+	transition: all .8s;
+}
+.btn:focus::after {
+	transform: translateX(100%);
+}
+.btn-primary::after {
+	background-image: linear-gradient(
+		-45deg,
+		transparent 0%,
+		transparent 20%,
+		rgba(255,255,255,.1) 30%,
+		rgba(255,255,255,.3) 45%,
+		rgba(255,255,255,.3) 55%,
+		rgba(255,255,255,.1) 70%,
+		transparent 80%,
+		transparent 100%
+	);
+}
+.btn-secondary::after {
+	background-image: linear-gradient(
+		-45deg,
+		transparent 0%,
+		transparent 20%,
+		rgba(103,16,206,.025) 30%,
+		rgba(103,16,206,.05) 45%,
+		rgba(103,16,206,.05) 55%,
+		rgba(103,16,206,.025) 70%,
+		transparent 80%,
+		transparent 100%
+	);
 }
 
 

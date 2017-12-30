@@ -69,10 +69,10 @@
 	color: #6710CE;
 	margin-top: 5px;
 }
-.question-nav {
+.footer .question-nav {
 	display: flex;
 }
-.question-nav .btn:last-child {
+.footer .question-nav .btn:last-child {
 	margin-left: 10px;
 }
 .questions {
