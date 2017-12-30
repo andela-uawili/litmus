@@ -9,24 +9,49 @@
     <link rel="stylesheet" type="text/css" href="css/test-screen.css">
 </head>
 <body>
-	<header class="header">
-		<div class="logo">
-			<img src="img/glyph.png">
-		</div>
-		<div class="details">
-			<h2 class="title">CIS311 - Web Development</h2>
-			<p class="description">Introduction to HTML, CSS and Javascript</p>
-		</div>
-		<div class="timer">
-			<span class="time-allowed">2 hrs 30 mins</span>
-			<span class="time-used">01:03:36</span>
-		</div>
-	</header>
-	<main class="questions">
-	</main>
-	<main class="footer">
-		
-	</main>
-	
+    <header class="header">
+        <div class="logo">
+            <img src="img/glyph.png">
+        </div>
+        <div class="details">
+            <h2 class="title">CIS311 - Web Development</h2>
+            <p class="description">Introduction to HTML, CSS and Javascript</p>
+        </div>
+        <div class="timer">
+            <span class="time-allowed">2 hrs 30 mins</span>
+            <span class="time-used">00:00:00</span>
+        </div>
+    </header>
+    <main class="questions">
+        <div class="question">
+            <h5 class="question-count">Question 2 of 5</h5>
+            <h3 class="question-header">Which of the following is true of the HTML 'class' and 'id' attributes?</h3> 
+            <ul class="question-options">
+                <li class="question-option">
+                    <input type="radio" name="question-2" id="option-1" value="1">
+                    <label for="option-1">The 'class' must be unique but the 'id' doesn't</label>
+                </li>
+                <li class="question-option">
+                    <input type="radio" name="question-2" id="option-2" value="2">
+                    <label for="option-2"> The 'id' must be unique but the 'class' doesn't</label>
+                </li>
+                <li class="question-option">
+                    <input type="radio" name="question-2" id="option-3" value="3">
+                    <label for="option-3">Both 'id' and 'class' must be unique</label>
+                </li>
+                <li class="question-option">
+                    <input type="radio" name="question-2" id="option-4" value="4">
+                    <label for="option-4"> Neither 'id' or 'class' must be unique</label>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer class="footer">
+        <nav class="question-nav">
+            <a class="btn btn-secondary previous" href="">Previous</a>
+            <a class="btn btn-secondary next" href="">Next</a>
+        </nav>
+        <a class="btn btn-primary submit" href="">Submit</a>
+    </footer>
 </body>
 </html>
